@@ -1,0 +1,9 @@
+2023-10-31 21:55:42,632 DEBUG o.t.TestNG [main] suiteXmlPath: "C:\Users\User\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml"
+2023-10-31 21:55:42,870 TRACE o.t.i.Graph [main] [Graph] ADDING NODE FirstTest.testIt()[pri:0, instance:edu.nerobeev.product.uitest.FirstTest@5143c662] -1714172439
+2023-10-31 21:55:42,871 TRACE o.t.i.Graph [main] [Graph] ================ SORTING
+2023-10-31 21:55:42,874 TRACE o.t.i.Graph [main] [Graph] =============== DONE SORTING
+2023-10-31 21:55:42,875 TRACE o.t.i.Graph [main] [Graph] ====== SORTED NODES
+2023-10-31 21:55:42,875 TRACE o.t.i.Graph [main] [Graph] ====== END SORTED NODES
+2023-10-31 21:55:42,880 INFO o.t.i.Utils [main] [TestNG] Running:
+  C:\Users\User\AppData\Local\JetBrains\IdeaIC2023.2\temp-testng-customsuite.xml
+
