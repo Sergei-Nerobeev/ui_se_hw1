@@ -1,4 +1,4 @@
-package edu.nerobeev.page;
+package edu.nerobeev.product.page;
 
 import edu.nerobeev.core.ui.element.LocatorType;
 import edu.nerobeev.core.ui.element.TextField;

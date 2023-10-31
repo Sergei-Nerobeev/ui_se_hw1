@@ -1,4 +1,4 @@
-package edu.nerobeev.page;
+package edu.nerobeev.product.page;
 
 import edu.nerobeev.core.ui.browser.Browser;
 import edu.nerobeev.core.ui.element.Button;

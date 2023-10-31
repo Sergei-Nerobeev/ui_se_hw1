@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://tesng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="methods" thread-count="1">
+<test name="Test">
+<!--    <groups>-->
+<!--        <run>-->
+<!--            <include name="Regression"/>-->
+<!--        </run>-->
+<!--    </groups>-->
+    <packages>
+        <package name="edu.nerobeev.*"/>
+    </packages>
+</test>
+</suite>

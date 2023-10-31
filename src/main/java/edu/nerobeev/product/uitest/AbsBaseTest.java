@@ -1,4 +1,4 @@
-package edu.nerobeev.uitest;
+package edu.nerobeev.product.uitest;
 
 import edu.nerobeev.core.ui.browser.Browser;
 import org.testng.annotations.AfterMethod;

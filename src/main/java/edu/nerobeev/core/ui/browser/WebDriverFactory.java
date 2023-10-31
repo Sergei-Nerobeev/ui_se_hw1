@@ -5,6 +5,8 @@ import org.apache.commons.lang3.NotImplementedException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
+
 import java.time.Duration;
 import static edu.nerobeev.config.GlobalParameter.BROWSER;
 import static edu.nerobeev.config.GlobalParameter.TIMEOUT;
@@ -21,6 +23,10 @@ public final class WebDriverFactory {
 			case FIREFOX -> {
 				WebDriverManager.firefoxdriver().setup();
 				yield new FirefoxDriver();
+			}
+			case SAFARI -> {
+				WebDriverManager.safaridriver().setup();
+				yield new SafariDriver();
 			}
 			default -> throw new NotImplementedException("Not implemented for " + BROWSER);
 		};
