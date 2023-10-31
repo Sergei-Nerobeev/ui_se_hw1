@@ -1,6 +1,6 @@
 package edu.nerobeev.config;
 
-import edu.nerobeev.core.ui.BrowserType;
+import edu.nerobeev.core.ui.browser.BrowserType;
 
 public final class GlobalParameter {
 	public static final BrowserType BROWSER = BrowserType.CHROME;

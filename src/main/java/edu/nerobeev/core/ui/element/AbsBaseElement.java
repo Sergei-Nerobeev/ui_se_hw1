@@ -1,5 +1,6 @@
 package edu.nerobeev.core.ui.element;
 
+import edu.nerobeev.core.ui.browser.Browser;
 import org.apache.commons.lang3.NotImplementedException;
 import org.openqa.selenium.By;
 
@@ -17,5 +18,8 @@ public abstract class AbsBaseElement {
 								throw new NotImplementedException("Not implemented for locator " + locatorType);
 
 				}
+		}
+		public String getText(){
+			return Browser.getBrowser().getText(by);
 		}
 }

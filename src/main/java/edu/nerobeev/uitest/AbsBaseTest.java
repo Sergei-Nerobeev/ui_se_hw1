@@ -1,24 +1,20 @@
 package edu.nerobeev.uitest;
 
-
-import edu.nerobeev.core.ui.WebDriverFactory;
-import org.assertj.core.api.SoftAssertions;
-import org.openqa.selenium.WebDriver;
+import edu.nerobeev.core.ui.browser.Browser;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.asserts.SoftAssert;
 
 public abstract class AbsBaseTest {
-		protected WebDriver webDriver;
-		protected SoftAssertions assertions;
+		protected SoftAssert assertion;
 
 		@BeforeMethod(alwaysRun = true)
 		public void initTest(){
-				webDriver = WebDriverFactory.getWebDriver();
-				assertions = new SoftAssertions();
+			assertion = new SoftAssert();
 		}
 		@AfterMethod(alwaysRun = true)
-				public void teardown(){
-						webDriver.quit();
-				}
+		public void teardown(){
+				Browser.getBrowser().quit();
+		}
 
 }

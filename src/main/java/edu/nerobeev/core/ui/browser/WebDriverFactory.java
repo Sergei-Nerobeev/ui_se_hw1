@@ -1,4 +1,4 @@
-package edu.nerobeev.core.ui;
+package edu.nerobeev.core.ui.browser;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.lang3.NotImplementedException;
@@ -10,6 +10,7 @@ import static edu.nerobeev.config.GlobalParameter.BROWSER;
 import static edu.nerobeev.config.GlobalParameter.TIMEOUT;
 
 public final class WebDriverFactory {
+
 	public static WebDriver getWebDriver(){
 		WebDriver webDriver;
 		webDriver= switch (BROWSER) {
@@ -23,8 +24,10 @@ public final class WebDriverFactory {
 			}
 			default -> throw new NotImplementedException("Not implemented for " + BROWSER);
 		};
+/*
 		webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(TIMEOUT));
 		webDriver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(TIMEOUT));
+*/
 		webDriver.manage().window().maximize();
 		return webDriver;
 	}
