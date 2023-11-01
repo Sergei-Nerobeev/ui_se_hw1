@@ -9,4 +9,7 @@ public class Input extends AbsBaseElement{
 	public void type(String string){ // метод передачи печати в Браузер
 		Browser.getBrowser().type(by,string);
 	}
+	public void click() { //метод клик
+		Browser.getBrowser().click(by);
+	}
 }

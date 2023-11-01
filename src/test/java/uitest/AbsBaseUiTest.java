@@ -11,12 +11,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.asserts.SoftAssert;
 
 public abstract class AbsBaseUiTest {
-	  protected WebDriver driver;
-		protected SoftAssert assertion;
-		@BeforeSuite(alwaysRun = true)
-		public void setup(){
-
-		}
+	 	protected SoftAssert assertion;
 
 		@BeforeMethod(alwaysRun = true)
 		public void initTest(){
@@ -25,8 +20,7 @@ public abstract class AbsBaseUiTest {
 
 		@AfterMethod(alwaysRun = true)
 		public void teardown(){
-
-			Browser.getBrowser().quit();
+		Browser.getBrowser().quit();
 		}
 
 }

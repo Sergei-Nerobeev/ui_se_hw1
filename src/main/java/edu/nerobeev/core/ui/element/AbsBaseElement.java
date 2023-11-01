@@ -10,9 +10,9 @@ public abstract class AbsBaseElement {
 
 		public AbsBaseElement(LocatorType locatorType,String locator){
 				switch (locatorType){
-						case XPATH : by = By.cssSelector(locator);
+						case XPATH : by = By.xpath(locator);
 						break;
-						case CSS : by = By.xpath(locator);
+						case CSS : by = By.cssSelector(locator);
 						break;
 						default:
 								throw new NotImplementedException("Not implemented for locator " + locatorType);

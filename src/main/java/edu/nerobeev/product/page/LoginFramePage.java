@@ -7,21 +7,22 @@ import edu.nerobeev.core.ui.element.LocatorType;
 
 public class LoginFramePage {
 	//SELECTORS
-private static final String FRAME_CSS_SELECTOR = "";
-private static final String USER_NAME_INPUT_CSS_SELECTOR = "";
+private static final String FRAME_CSS_SELECTOR = " ";
+private static final String EMAIL_INPUT_CSS_SELECTOR = "//*[@name='email']";
 private static final String PASSWORD_INPUT_CSS_SELECTOR = "";
 private static final String NEXT_BUTTON_CSS_SELECTOR = "";
 private static final String SUBMIT_BUTTON_CSS_SELECTOR = "";
 
 	//ELEMENTS
-	private final Input userNameInput = new Input(LocatorType.CSS, USER_NAME_INPUT_CSS_SELECTOR);
+	private final Input emailInput = new Input(LocatorType.XPATH, EMAIL_INPUT_CSS_SELECTOR);
 	private final Button nextButton = new Button(LocatorType.CSS, NEXT_BUTTON_CSS_SELECTOR);
 	private final Input passwordInput = new Input(LocatorType.CSS, PASSWORD_INPUT_CSS_SELECTOR);
 	private final Button submitButton = new Button(LocatorType.CSS, SUBMIT_BUTTON_CSS_SELECTOR);
 
-	public LoginFramePage typeUserName(String userName){
-		toFrame();
-		userNameInput.type(userName);
+	public LoginFramePage typeEmail(String email){
+//		toFrame();
+		emailInput.click();
+		emailInput.type(email);
 		Browser.getBrowser().defaultContent();
 		return this;
 	}
