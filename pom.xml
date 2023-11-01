@@ -16,7 +16,7 @@
         <webdriver.manager.version>5.5.3</webdriver.manager.version>
         <selenium.java.version>4.14.1</selenium.java.version>
         <junit.version>5.9.2</junit.version>
-        <testng.version>7.7.0</testng.version>
+        <testng.version>7.8.0</testng.version>
         <lombok.version>1.18.30</lombok.version>
         <faker.version>1.0.2</faker.version>
         <restassured.version>4.4.0</restassured.version>
@@ -69,15 +69,15 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>com.github.javafaker</groupId>
-            <artifactId>javafaker</artifactId>
-            <version>${faker.version}</version>
-        </dependency>
-        <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>${testng.version}</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>${faker.version}</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -95,24 +95,16 @@
             <artifactId>log4j-core</artifactId>
             <version>${log4j.api.version}</version>
         </dependency>
-
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-slf4j2-impl</artifactId>
             <version>2.21.1</version>
             <scope>test</scope>
         </dependency>
-
         <dependency>
             <groupId>org.aeonbits.owner</groupId>
             <artifactId>owner-java8</artifactId>
             <version>1.0.12</version>
-        </dependency>
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>7.7.0</version>
-            <scope>compile</scope>
         </dependency>
 
     </dependencies>

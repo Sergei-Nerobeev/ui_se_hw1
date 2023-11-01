@@ -15,9 +15,9 @@ import java.time.Duration;
 import static edu.nerobeev.config.GlobalParameter.TIMEOUT;
 
 public class Browser implements WrapsDriver {  // класс-сборщик-коннектор! Работает с Selenium.
-	private final WebDriver driver;
+	private  WebDriver driver;
 	private final WebDriverWait wait;
-	private static ThreadLocal<Browser> instance;
+	private static ThreadLocal<Browser> instance = new ThreadLocal<>();
 	private static Browser browser;
 
 	private Browser() {
