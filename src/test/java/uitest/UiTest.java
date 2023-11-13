@@ -11,7 +11,9 @@ public class UiTest extends AbsBaseUiTest {
 
 				MainPage.open()
 						.pressEnterButton()
-						.typeEmail("temiraj871@procowork.com");
+						.typeEmail("qwerty@gmail.com")
+						.typePassword("Password")
+						.simpleClickSubmit();
 
 
 

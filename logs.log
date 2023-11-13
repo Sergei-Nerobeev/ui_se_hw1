@@ -1,34 +1,10 @@
-2023-11-01 19:15:23,478 DEBUG o.t.TestNG [main] suiteXmlPath: "/home/nero/.cache/JetBrains/IdeaIC2023.2/temp-testng-customsuite.xml"
-2023-11-01 19:15:23,685 TRACE o.t.i.Graph [main] [Graph] ADDING NODE AbsBaseUiTest.initTest()[pri:0, instance:null] 2073846658
-2023-11-01 19:15:23,686 TRACE o.t.i.Graph [main] [Graph] ================ SORTING
-2023-11-01 19:15:23,689 TRACE o.t.i.Graph [main] [Graph] =============== DONE SORTING
-2023-11-01 19:15:23,690 TRACE o.t.i.Graph [main] [Graph] ====== SORTED NODES
-2023-11-01 19:15:23,690 TRACE o.t.i.Graph [main] [Graph] ====== END SORTED NODES
-2023-11-01 19:15:23,691 TRACE o.t.i.Graph [main] [Graph] ADDING NODE AbsBaseUiTest.teardown()[pri:0, instance:null] -146468668
-2023-11-01 19:15:23,692 TRACE o.t.i.Graph [main] [Graph] ================ SORTING
-2023-11-01 19:15:23,692 TRACE o.t.i.Graph [main] [Graph] =============== DONE SORTING
-2023-11-01 19:15:23,692 TRACE o.t.i.Graph [main] [Graph] ====== SORTED NODES
-2023-11-01 19:15:23,692 TRACE o.t.i.Graph [main] [Graph] ====== END SORTED NODES
-2023-11-01 19:15:23,698 TRACE o.t.i.Graph [main] [Graph] ADDING NODE UiTest.testMainPage()[pri:0, instance:uitest.UiTest@4c1f22f3] 198089600
-2023-11-01 19:15:23,698 TRACE o.t.i.Graph [main] [Graph] ================ SORTING
-2023-11-01 19:15:23,698 TRACE o.t.i.Graph [main] [Graph] =============== DONE SORTING
-2023-11-01 19:15:23,698 TRACE o.t.i.Graph [main] [Graph] ====== SORTED NODES
-2023-11-01 19:15:23,698 TRACE o.t.i.Graph [main] [Graph] ====== END SORTED NODES
-2023-11-01 19:15:23,704 INFO o.t.i.Utils [main] [TestNG] Running:
-  /home/nero/.cache/JetBrains/IdeaIC2023.2/temp-testng-customsuite.xml
-
-2023-11-01 19:15:23,803 INFO e.n.c.u.b.WebDriverFactory [main] Starting webDriver..
-2023-11-01 19:15:23,818 DEBUG i.g.b.w.WebDriverManager [main] Using WebDriverManager 5.5.3
-2023-11-01 19:15:24,199 DEBUG i.g.b.w.c.ResolutionCache [main] Resolution chrome=118 in cache (valid until 20:10:59 01/11/2023 CET)
-2023-11-01 19:15:24,200 DEBUG i.g.b.w.c.ResolutionCache [main] Resolution chrome118=118.0.5993.70 in cache (valid until 14:37:00 02/11/2023 CET)
-2023-11-01 19:15:24,200 INFO i.g.b.w.WebDriverManager [main] Using chromedriver 118.0.5993.70 (resolved driver for Chrome 118)
-2023-11-01 19:15:24,206 TRACE i.g.b.w.c.CacheHandler [main] Checking if chromedriver exists in cache
-2023-11-01 19:15:24,218 TRACE i.g.b.w.c.CacheHandler [main] Filter cache by chromedriver -- input list [/home/nero/.cache/selenium/chromedriver/linux64/109.0.5414.74/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/110.0.5481.77/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/111.0.5563.64/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/112.0.5615.49/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/113.0.5672.63/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/118.0.5993.70/chromedriver, /home/nero/.cache/selenium/geckodriver/linux64/0.32.0/geckodriver, /home/nero/.cache/selenium/resolution.properties] -- output list [/home/nero/.cache/selenium/chromedriver/linux64/109.0.5414.74/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/110.0.5481.77/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/111.0.5563.64/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/112.0.5615.49/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/113.0.5672.63/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/118.0.5993.70/chromedriver] 
-2023-11-01 19:15:24,219 TRACE i.g.b.w.c.CacheHandler [main] Filter cache by 118.0.5993.70 -- input list [/home/nero/.cache/selenium/chromedriver/linux64/109.0.5414.74/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/110.0.5481.77/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/111.0.5563.64/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/112.0.5615.49/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/113.0.5672.63/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/118.0.5993.70/chromedriver] -- output list [/home/nero/.cache/selenium/chromedriver/linux64/118.0.5993.70/chromedriver] 
-2023-11-01 19:15:24,219 TRACE i.g.b.w.c.CacheHandler [main] Filter cache by LINUX -- input list [/home/nero/.cache/selenium/chromedriver/linux64/118.0.5993.70/chromedriver] -- output list [/home/nero/.cache/selenium/chromedriver/linux64/118.0.5993.70/chromedriver] 
-2023-11-01 19:15:24,220 DEBUG i.g.b.w.WebDriverManager [main] Driver chromedriver 118.0.5993.70 found in cache
-2023-11-01 19:15:24,221 INFO i.g.b.w.WebDriverManager [main] Exporting webdriver.chrome.driver as /home/nero/.cache/selenium/chromedriver/linux64/118.0.5993.70/chromedriver
-2023-11-01 19:15:25,699 INFO e.n.c.u.b.WebDriverFactory [main] Web driver started
-2023-11-01 19:15:25,989 INFO e.n.c.u.b.WebDriverFactory [main] Try to add listener
-2023-11-01 19:15:26,019 INFO e.n.c.u.b.WebDriverFactory [main] Listener registered
-2023-11-01 19:15:26,019 INFO e.n.c.u.b.WebDriverFactory [main] Web driver configured
+2023-11-13 17:56:26,209 DEBUG i.g.b.w.WebDriverManager [main] Using WebDriverManager 5.5.3
+2023-11-13 17:56:26,861 DEBUG i.g.b.w.c.ResolutionCache [main] Resolution chrome=119 in cache (valid until 18:55:21 13/11/2023 CET)
+2023-11-13 17:56:26,862 DEBUG i.g.b.w.c.ResolutionCache [main] Resolution chrome119=119.0.6045.105 in cache (valid until 17:55:21 14/11/2023 CET)
+2023-11-13 17:56:26,866 INFO i.g.b.w.WebDriverManager [main] Using chromedriver 119.0.6045.105 (resolved driver for Chrome 119)
+2023-11-13 17:56:26,872 TRACE i.g.b.w.c.CacheHandler [main] Checking if chromedriver exists in cache
+2023-11-13 17:56:26,881 TRACE i.g.b.w.c.CacheHandler [main] Filter cache by chromedriver -- input list [/home/nero/.cache/selenium/chromedriver/linux64/109.0.5414.74/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/110.0.5481.77/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/111.0.5563.64/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/112.0.5615.49/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/113.0.5672.63/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/118.0.5993.70/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver, /home/nero/.cache/selenium/geckodriver/linux64/0.32.0/geckodriver, /home/nero/.cache/selenium/resolution.properties] -- output list [/home/nero/.cache/selenium/chromedriver/linux64/109.0.5414.74/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/110.0.5481.77/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/111.0.5563.64/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/112.0.5615.49/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/113.0.5672.63/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/118.0.5993.70/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver] 
+2023-11-13 17:56:26,882 TRACE i.g.b.w.c.CacheHandler [main] Filter cache by 119.0.6045.105 -- input list [/home/nero/.cache/selenium/chromedriver/linux64/109.0.5414.74/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/110.0.5481.77/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/111.0.5563.64/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/112.0.5615.49/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/113.0.5672.63/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/114.0.5735.90/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/118.0.5993.70/chromedriver, /home/nero/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver] -- output list [/home/nero/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver] 
+2023-11-13 17:56:26,883 TRACE i.g.b.w.c.CacheHandler [main] Filter cache by LINUX -- input list [/home/nero/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver] -- output list [/home/nero/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver] 
+2023-11-13 17:56:26,884 DEBUG i.g.b.w.WebDriverManager [main] Driver chromedriver 119.0.6045.105 found in cache
+2023-11-13 17:56:26,888 INFO i.g.b.w.WebDriverManager [main] Exporting webdriver.chrome.driver as /home/nero/.cache/selenium/chromedriver/linux64/119.0.6045.105/chromedriver

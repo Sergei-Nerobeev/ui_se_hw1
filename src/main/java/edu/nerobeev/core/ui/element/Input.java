@@ -6,10 +6,21 @@ public class Input extends AbsBaseElement{
 	public Input(LocatorType locatorType, String locator) {
 		super(locatorType, locator);
 	}
-	public void type(String string){ // метод передачи печати в Браузер
+	// МЕТОДЫ С ОЖИДАНИЕМ СОСТОЯНИЯ
+	public void type(String string){ // метод передачи печати в Браузер с ожиданием состояния
 		Browser.getBrowser().type(by,string);
 	}
-	public void click() { //метод клик
+	public void click() { //метод клик с ожиданием состояния
 		Browser.getBrowser().click(by);
+	}
+
+
+	// МЕТОДЫ БЕЗ ОЖИДАНИЯ СОСТОЯНИЯ
+
+	public void simpleClick() { //метод клик без ожидания состояния
+		Browser.getBrowser().simpleClick(by);
+	}
+	public void simpleType(String string){ // метод передачи печати в Браузер без ожидания состояния
+		Browser.getBrowser().simpleType(by,string);
 	}
 }

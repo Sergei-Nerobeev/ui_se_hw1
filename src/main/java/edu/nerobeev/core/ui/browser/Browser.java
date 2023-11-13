@@ -31,7 +31,6 @@ public class Browser implements WrapsDriver {  // класс-сборщик-ко
 		}
 		return instance.get();
 	}
-
 	public void open(String url) { //открывает адрес страницы
 		driver.get(url);
 	}
@@ -46,6 +45,7 @@ public class Browser implements WrapsDriver {  // класс-сборщик-ко
 		driver.switchTo().defaultContent();
 	}
 
+	// МЕТОДЫ С ОЖИДАНИЕМ СОСТОЯНИЯ
 	public void click(By by) { // метод клик по элементу
 		waitVisible(by); // ожидание видимости элемента
 		ExpectedCondition<WebElement> condition = ExpectedConditions.elementToBeClickable(by);//ожидание кликабельно
@@ -73,8 +73,8 @@ public class Browser implements WrapsDriver {  // класс-сборщик-ко
 
 	private By getBy(LocatorType locatorType, String locator) { // метод выбора типа: локатор/селектор
 		By by = switch (locatorType) {
-			case XPATH -> By.cssSelector(locator);
-			case CSS -> By.xpath(locator);
+			case XPATH -> By.xpath(locator);
+			case CSS -> By.cssSelector(locator);
 			default -> throw new NotImplementedException("Not implemented for locator " + locatorType);
 		};
 		return by;

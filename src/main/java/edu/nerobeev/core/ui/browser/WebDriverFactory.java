@@ -36,7 +36,7 @@ public final class WebDriverFactory {
 			}
 			default -> throw new NotImplementedException("Not implemented for " + BROWSER);
 		};
-		logger.info("Web driver started");
+		logger.info("Web driver " + webDriver + " started");
 		webDriver.manage().window().maximize();
 
     logger.info("Try to add listener");
